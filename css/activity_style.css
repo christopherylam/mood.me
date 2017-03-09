@@ -19,6 +19,12 @@ a
 	font-size: 90%;
 }
 
+#logo
+{
+	width: auto;
+	height: auto;
+}
+
 @media only screen and (max-width:600px)
 {
 	#menuicon

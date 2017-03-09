@@ -9,12 +9,19 @@
 	display: none;
 }
 
+
 img
 {
 	height: 10.8%;
 	width: 10.8%;
 	padding-left: 4.1%;
 	padding-right: 0.5%;
+}
+
+#logo
+{
+	width: auto;
+	height: auto;
 }
 
 .line
