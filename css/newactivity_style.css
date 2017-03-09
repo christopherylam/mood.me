@@ -9,6 +9,12 @@ h1
 	text-align: center;
 }
 
+#logo
+{
+	width: auto;
+	height: auto;
+}
+
 @media only screen and (max-width:600px)
 {
 	img
