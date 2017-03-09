@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>mood.me - Statistics</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<!-- Chart.js -->
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+  		<!-- statistics_custom.js -->
+  		<script src="js/statistics_custom.js"></script>
+		<!-- animate.css -->
+		<link rel="stylesheet" href="css/animate.css" />
+		<!-- style.css -->
+		<link rel="stylesheet" href="css/statistics_style.css" />
+	</head>
+	<body>
+		<br><br>
+		<div class="container-fluid">
+			<div style="float:left;" class="dropdown">
+        		<img id="menuicon" class="btn dropdown-toggle" src="img/burger1.png" alt="dropdown image" data-toggle="dropdown">
+        			<ul class="dropdown-menu">
+            			<li><a href="#">Child 1</a></li>
+           				<li><a href="#">Child 2</a></li>
+            			<li><a href="#">Add New..</a></li>
+        			</ul>
+    		</div>
+    		<a href="index.html"><img id=id="logo" src="img/logoname.png" /></a>
+		</div>
+		<div class="container-fluid">
+			<hr>
+		</div>
+		<div class="container-fluid">
+			<div class="btn-group btn-group-justified">
+  				<div class="btn-group" role="group">
+    				<a class="btn btn-primary" href="NewEntry.html" role="button">New Entry</a>
+  				</div>
+			 	 <div class="btn-group" role="group">
+			    	<a class="btn btn-warning" href="Calendar.html" role="button">Calendar</a>
+			  	</div>
+			  	<div class="btn-group" role="group">
+			    	<a class="btn btn-danger" href="Statistics.html" role="button" autofocus="true">Statistics</a>
+			  	</div>
+			</div>
+ 		</div>
+ 		<br><br>
+ 		<div id="january" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('January', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('January', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      January<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 	</div>
+
+	 	<div id="february" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('February', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('February', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      February<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+
+	 	<div id="march" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('March', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('March', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      March<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 	
+	 	</div>
+
+	 	<div id="april" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('April', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('April', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      April<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+
+	 	<div id="may" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('May', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('May', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      May<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+
+	 	<div id="june" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('June', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('June', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      June<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+
+	 	<div id="july" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('July', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('July', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      July<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+
+	 	<div id="august" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('August', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('August', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      August<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+
+	 	<div id="september" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('September', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('September', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      September<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+
+	 	<div id="october" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('October', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('October', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      October<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+
+	 	<div id="november" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('November', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('November', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      November<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+
+	 	<div id="december" class="animated fadeIn calendar">
+ 			<div class="month"> 
+			  <ul>
+			    <a href="javascript:void(0);" onclick="toggleMonth('December', 'Left')"><li class="prev">&#10094;</li></a>
+			    <a href="javascript:void(0);" onclick="toggleMonth('December', 'Right')"><li class="next">&#10095;</li></a>
+			    <li style="text-align:center;">
+			      December<br>
+			      <span style="font-size:18px">2017</span>
+			    </li>
+			  </ul>
+			</div>
+	 		
+	 	</div>
+	 	<canvas class="animated fadeIn" id="myChart"></canvas>
+	 		<div class="container-fluid">
+	 			<div class="row">
+	 				<div class="col-xs-12">
+	 					<img class="line" src="img/angry.png" />
+	 					<img class="line" src="img/calm.png" />
+	 					<img class="line" src="img/excited.png" />
+	 					<img class="line" src="img/happy.png" />
+	 					<img class="line" src="img/sad.png" />
+	 					<img class="line" src="img/scared.png" />
+	 					<img class="line" src="img/sick.png" />
+	 					<img class="line" src="img/tired.png" />
+	 					<img src="img/worried.png" />
+	 				</div>
+	 			</div>
+	 		</div>
+ 		<br><br>
+		<script>
+ 			var months = document.getElementsByClassName("calendar");
+ 			var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var d = new Date();
+			if(monthNames[d.getMonth()] === "January")
+ 			{
+ 				months[0].style.display = "block";
+ 				getChart("January");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "February")
+ 			{
+ 				months[1].style.display = "block";
+ 				getChart("February");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "March")
+ 			{
+ 				months[2].style.display = "block";
+ 				getChart("March");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "April")
+ 			{
+ 				months[3].style.display = "block";
+ 				getChart("April");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "May")
+ 			{
+ 				months[4].style.display = "block";
+ 				getChart("May");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "June")
+ 			{
+ 				months[5].style.display = "block";
+ 				getChart("June");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "July")
+ 			{
+ 				months[6].style.display = "block";
+ 				getChart("July");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "August")
+ 			{
+ 				months[7].style.display = "block";
+ 				getChart("August");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "September")
+ 			{
+ 				months[8].style.display = "block";
+ 				getChart("September");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "October")
+ 			{
+ 				months[9].style.display = "block";
+ 				getChart("October");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "November")
+ 			{
+ 				months[10].style.display = "block";
+ 				getChart("November");
+ 			}
+ 			else if(monthNames[d.getMonth()] === "December")
+ 			{
+ 				months[11].style.display = "block";
+ 				getChart("December");
+ 			}
+ 		</script>
+ 		<script>
+ 		function toggleMonth(month, direction)
+ 		{
+ 			var months = document.getElementsByClassName("calendar");
+ 			if(direction === "Left")
+ 			{
+ 				if(month === "January")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 11)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "February")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 0)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "March")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 1)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "April")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 2)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "May")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 3)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "June")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 4)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "July")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 5)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "August")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 6)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "September")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 7)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "October")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 8)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "November")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 9)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "December")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 10)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 			}
+ 			else if(direction === "Right")
+ 			{
+ 				if(month === "January")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 1)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "February")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 2)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "March")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 3)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "April")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 4)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "May")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 5)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "June")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 6)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "July")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 7)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "August")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 8)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "September")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 9)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "October")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 10)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "November")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 11)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 				else if(month === "December")
+ 				{
+ 					for(var i = 0; i < months.length; i++)
+ 					{
+ 						if(i == 0)
+ 						{
+ 							months[i].style.display = "block";
+ 						}
+ 						else
+ 						{
+ 							months[i].style.display = "none";
+ 						}
+ 					}
+ 				}
+ 			}
+ 			getChart();
+ 		}
+ 		</script>
+ 	</body>
+ </html>

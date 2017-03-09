@@ -1,0 +1,72 @@
+@media only screen and (max-width:600px)
+{
+	h1
+	{
+		float:right;
+		font-size: 90%;
+		padding-right: 2%;
+		padding-bottom: 10%;
+	}
+
+	#menuicon
+	{
+		height: 30%;
+		width: 30%;
+	}
+
+	.emotion
+	{
+		padding-top: 8%;
+	}
+
+	.activity_image
+	{
+		height: 50%;
+		width: 50%;
+	}
+
+}
+
+.emotion
+{
+	height: 25%;
+	width: 25%;
+	float: left;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 12%;
+}
+
+@media only screen and (min-width:600px)
+{
+	.activity_image
+	{
+		height: 20%;
+		width: 20%;
+	}
+}
+
+h1
+{
+	float: right;
+	padding-top: 9%;
+	padding-right: 28%;
+}
+
+#date
+{
+	text-align: center;
+}
+
+a
+{
+	text-decoration: none;
+	font-family: "Comic Sans MS";
+}
+
+.divider
+{
+	border: 2px solid gray;
+	padding-left: 5%;
+	padding-right: 5%;
+}

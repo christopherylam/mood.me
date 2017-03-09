@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>mood.me - New Entry</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- animate.css -->
+		<link rel="stylesheet" href="css/animate.css" />
+		<!-- style.css -->
+		<link rel="stylesheet" href="css/record_style.css" />
+		<!-- custom.js -->
+		<!-- <script src="js/record_custom.js"></script> -->
+	</head>
+	<body>
+		<br><br>
+		<div class="container-fluid">
+			<div style="float:left;" class="dropdown">
+        		<img id="menuicon" class="btn dropdown-toggle" src="img/burger1.png" alt="dropdown image" data-toggle="dropdown">
+        			<ul class="dropdown-menu">
+            			<li><a href="#">Child 1</a></li>
+           				<li><a href="#">Child 2</a></li>
+            			<li><a href="#">Add New..</a></li>
+        			</ul>
+    		</div>
+    		<a href="index.html"><img id=id="logo" src="img/logoname.png" /></a>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div id="note_block" class="col-xs-12 animated tada">
+					<h1 style="float:left;padding-right: 5%;">Record -</h1>
+					<img id="record_image" src="img/microphone.png" />
+				</div>
+			</div>
+		</div>
+		<br><br>
+
+		<div id="videoplayer" align="center" class="embed-responsive embed-responsive-16by9">
+		    <video id="videowindow" controls autoplay class="embed-responsive-item"></video><br>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" class="btn btn-info" id="rec" onclick="onBtnRecordClicked()">Record</button>
+					<button type="button" class="btn btn-warning" id="pauseRes" onclick="onPauseResumeClicked()" disabled>Pause</button>
+					<button type="button" class="btn btn-danger" id="stop" onclick="onBtnStopClicked()" disabled>Stop</button>
+					<button type="button" class="btn btn-default" id="download"><a id="downloadLink" download="mediarecorder.webm" name="mediarecorder.webm" href>Download Video File</a></button>
+				</div>
+			</div>
+		</div>
+		<p style="display:none;" id="data"></p>
+
+		<br><br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-6 img-hover">
+					<a class="btn btn-primary" href="Option.html" role="button">Back</a>
+				</div>
+				<div class="col-xs-6 img-hover">
+					<a class="btn btn-primary custom-button-width pull-right" href="Option.html" role="button">Done</a>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<script src="js/record_custom.js"></script>
+	</body>
+</html>

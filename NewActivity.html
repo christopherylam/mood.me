@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>mood.me - New Entry</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- animate.css -->
+		<link rel="stylesheet" href="css/animate.css" />
+		<!-- style.css -->
+		<link rel="stylesheet" href="css/newentry_style.css" />
+		<link rel="stylesheet" href="css/newactivity_style.css" />
+		<!-- custom.js -->
+		<script src="js/newactivity_custom.js"></script>
+	</head>
+	<body>
+		<br><br>
+		<div class="container-fluid">
+			<div style="float:left;" class="dropdown">
+        		<img id="menuicon" class="btn dropdown-toggle" src="img/burger1.png" alt="dropdown image" data-toggle="dropdown">
+        			<ul class="dropdown-menu">
+            			<li><a href="#">Child 1</a></li>
+           				<li><a href="#">Child 2</a></li>
+        			</ul>
+    		</div>
+    		<a href="index.html"><img id=id="logo" src="img/logoname.png" /></a>
+		</div>
+		<div class="container-fluid">
+			<hr>
+		</div>
+		<div class="container-fluid">
+			<div class="btn-group btn-group-justified">
+  				<div class="btn-group" role="group">
+    				<a class="btn btn-primary" href="NewEntry.html" role="button" autofocus="true">New Entry</a>
+  				</div>
+			 	 <div class="btn-group" role="group">
+			    	<a class="btn btn-warning" href="Calendar.html" role="button">Calendar</a>
+			  	</div>
+			  	<div class="btn-group" role="group">
+			    	<a class="btn btn-danger" href="Statistics.html" role="button">Statistics</a>
+			  	</div>
+			</div>
+ 		</div>
+ 		<br><br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>ADD A NEW ACTIVITY</h1>
+				</div>
+			</div>
+
+			<br><br><br>
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" id="imgupload" class="btn btn-default">
+						<div id="getImage">
+							<label for="file_select">
+								<img id="imgpr" src="img/addnew.png" />
+							</label>
+							<input id="file_select" type="file" />
+						</div>
+					</button>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="row">
+				<div class="col-xs-6">
+					<input type="text" id="name" class="form-control" placeholder="Add Activity Name..">
+				</div>	
+				<div class="col-xs-6">
+					<a class="btn btn-primary" href="NewEntry.html" role="button">Done</a>
+				</div>
+			</div>
+		</div>
+
+		<br><br>
+	</body>
+	<script>
+		$("input:file").change(function () {
+       if ($(this).val() !== "") {
+        var file = $('#file_select')[0].files[0];
+        console.log(file.size);
+        var reader = new FileReader();
+        var img = new Image();
+        var _URL = window.URL || window.webkitURL;
+        reader.readAsDataURL(file);
+        reader.onload = function(_file) {
+        
+        $('#imgupload #imgpr').attr('src',_file.target.result);
+    } 
+   }
+});
+	</script>
+</html>

@@ -1,0 +1,80 @@
+.second
+{
+	animation-delay: 0.2s;
+}
+
+#main_question
+{
+	text-align: center;
+}
+
+#appname
+{
+	text-align: center;
+	font-family: "Comic Sans MS";
+}
+
+@media only screen and (max-width:500px)
+{
+	#menuicon
+	{
+		height: 30%;
+		width: 30%;
+	}
+
+	img
+	{
+		width: 35%;
+		height: 35%;
+	}
+
+	.line
+	{
+		padding-left: 21%;
+	}
+
+	#main_question
+	{
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width:500px)
+{
+	img
+	{
+		width: 50%;
+		height: 50%;
+	}
+
+	.img-hover img 
+	{
+	    -webkit-transition: all .3s ease; /* Safari and Chrome */
+	  	-moz-transition: all .3s ease; /* Firefox */
+	  	-o-transition: all .3s ease; /* IE 9 */
+	  	-ms-transition: all .3s ease; /* Opera */
+	  	transition: all .3s ease;
+	}
+
+	.img-hover img:hover 
+	{
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+	    -moz-transform:scale(1.20); /* Firefox */
+	    -ms-transform:scale(1.20); /* IE 9 */
+	    -o-transform:translatZ(0) scale(1.20); /* Opera */
+	    transform:translatZ(0) scale(1.20);
+	}
+
+	.line
+	{
+		padding-left: 22%;
+	}
+
+	#menuicon
+    {
+        height: 30%;
+        width: 30%;
+    }
+}

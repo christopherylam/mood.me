@@ -1,0 +1,43 @@
+#sketchpadapp {
+    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rightside {
+    margin-left:10px;
+}
+
+#black_button
+{
+    background-color: black;
+    color: white;
+}
+
+#sketchpad 
+{
+    height:600px;
+    width:1100px;
+    border:2px solid #888;
+    border-radius:4px;
+    position:relative; 
+}
+
+#clearbutton {
+    font-size: 15px;
+    padding: 10px;
+    -webkit-appearance: none;
+    background: #eee;
+    border: 1px solid #888;
+    text-align:center;
+}
+
+#menuicon
+{
+    height: 30%;
+    width: 30%;
+}

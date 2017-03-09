@@ -1,0 +1,67 @@
+#appname
+{
+	text-align: center;
+	font-family: "Comic Sans MS";
+}
+
+@media only screen and (max-width:500px)
+{
+	#menuicon
+	{
+		height: 30%;
+		width: 30%;
+	}
+
+	#main_question
+	{
+		text-align: center;
+	}
+
+	h1
+	{
+		font-size: 200%;
+	}
+
+	#notebook_image
+	{
+		width: 30%;
+		height: 40%;
+	}
+
+	#note_block
+	{
+		padding-left: 28%;
+	}
+}
+
+@media only screen and (min-width: 500px) 
+{
+	#menuicon
+	{
+		height: 80px;
+		width: 100px;
+	}
+
+	h1
+	{
+		font-size: 320%;
+		padding-right: -50%;
+	}
+
+	#note_block
+	{
+		padding-left: 40%;
+	}
+
+	#notebook_image
+	{
+		width: 70px;
+		height: 80px;
+	}
+
+	#menuicon
+    {
+        height: 30%;
+        width: 30%;
+    }
+}

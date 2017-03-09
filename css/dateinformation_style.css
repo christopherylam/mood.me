@@ -1,0 +1,66 @@
+@media only screen and (max-width:500px)
+{
+	h1
+	{
+		float:right;
+		font-size: 90%;
+		padding-right: 2%;
+		padding-bottom: 10%;
+	}
+
+	#menuicon
+	{
+		height: 30%;
+		width: 30%;
+	}
+
+	.emotion
+	{
+		padding-top: 8%;
+	}
+
+}
+
+
+.emotion
+{
+	height: 25%;
+	width: 25%;
+	float: left;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 12%;
+}
+
+h1
+{
+	float: right;
+	padding-top: 9%;
+	padding-right: 28%;
+}
+
+a
+{
+	text-decoration: none;
+	font-family: "Comic Sans MS";
+}
+
+#date
+{
+	text-align: center;
+}
+
+.entry
+{
+	border: 3px solid gray;
+}
+
+.entry:hover
+{
+	background-color: #f2efef;
+	-webkit-transition: all .3s ease; /* Safari and Chrome */
+	-moz-transition: all .3s ease; /* Firefox */
+	-o-transition: all .3s ease; /* IE 9 */
+	-ms-transition: all .3s ease; /* Opera */
+	transition: all .3s ease;
+}

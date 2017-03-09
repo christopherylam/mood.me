@@ -1,0 +1,99 @@
+hr 
+{
+   border: 2px solid #aaaaaa;
+}
+
+.second
+{
+	animation-delay: 0.2s;
+}
+
+.third
+{
+	animation-delay: 0.5s;
+}
+
+#appname
+{
+	text-align: center;
+	font-family: "Comic Sans MS";
+}
+
+@media only screen and (max-width:500px)
+{
+	h3
+	{	
+		padding-left: 22%;
+		font-size: 85%;
+	}
+
+	#menuicon
+	{
+		height: 30%;
+		width: 30%;
+	}
+
+	#main_question
+	{
+		font-size: 200%;
+		text-align: center;
+	}
+
+	#menuicon
+    {
+        height: 30%;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 500px) 
+{
+	h3
+	{
+		padding-left: 23%;
+	}
+
+	#main_question
+	{
+		text-align: center;
+	}
+
+	.face
+	{
+		height: 70%;
+		width: 70%;
+	}
+
+	#menuicon
+    {
+        height: 30%;
+        width: 30%;
+    }
+
+	a
+	{
+		text-decoration: none;
+	}
+
+	.img-hover img 
+	{
+	    -webkit-transition: all .3s ease; /* Safari and Chrome */
+	  	-moz-transition: all .3s ease; /* Firefox */
+	  	-o-transition: all .3s ease; /* IE 9 */
+	  	-ms-transition: all .3s ease; /* Opera */
+	  	transition: all .3s ease;
+	}
+
+	.img-hover img:hover 
+	{
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+	    -moz-transform:scale(1.20); /* Firefox */
+	    -ms-transform:scale(1.20); /* IE 9 */
+	    -o-transform:translatZ(0) scale(1.20); /* Opera */
+	    transform:translatZ(0) scale(1.20);
+	}
+}
+
+
