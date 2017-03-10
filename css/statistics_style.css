@@ -18,12 +18,6 @@ img
 	padding-right: 0.5%;
 }
 
-#logo
-{
-	width: auto;
-	height: auto;
-}
-
 .line
 {
 	float: left;
@@ -79,6 +73,12 @@ img
 	{
 		font-size: 200%;
 	}
+
+	#logo
+	{
+		width: 30%;
+		height: 30%;
+	}
 }
 
 @media only screen and (min-width:500px)
@@ -93,5 +93,11 @@ img
 	{
 		font-size: 320%;
 		padding-right: -50%;
+	}
+
+	#logo
+	{
+		width: auto;
+		height: auto;
 	}
 }

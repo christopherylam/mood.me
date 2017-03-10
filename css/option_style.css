@@ -14,13 +14,7 @@
 	font-family: "Comic Sans MS";
 }
 
-#logo
-{
-	width: auto;
-	height: auto;
-}
-
-@media only screen and (max-width:500px)
+@media only screen and (max-width:600px)
 {
 	#menuicon
 	{
@@ -43,9 +37,15 @@
 	{
 		text-align: center;
 	}
+
+	#logo
+	{
+		width: 30%;
+		height: 30%;
+	}
 }
 
-@media only screen and (min-width:500px)
+@media only screen and (min-width:600px)
 {
 	img
 	{
@@ -83,4 +83,10 @@
         height: 30%;
         width: 30%;
     }
+
+    #logo
+	{
+		width: auto;
+		height: auto;
+	}
 }

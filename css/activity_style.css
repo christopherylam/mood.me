@@ -19,12 +19,6 @@ a
 	font-size: 90%;
 }
 
-#logo
-{
-	width: auto;
-	height: auto;
-}
-
 @media only screen and (max-width:600px)
 {
 	#menuicon
@@ -59,6 +53,12 @@ a
 		height: 25%;
 		width: 25%;
 		margin-left:35%;
+	}
+
+	#logo
+	{
+		width: 30%;
+		height: 30%;
 	}
 
 }
@@ -120,5 +120,11 @@ a
 	    -ms-transform:scale(1.20); /* IE 9 */
 	    -o-transform:translatZ(0) scale(1.20); /* Opera */
 	    transform:translatZ(0) scale(1.20);
+	}
+
+	#logo
+	{
+		width: auto;
+		height: auto;
 	}
 }

@@ -1,4 +1,4 @@
-@media only screen and (max-width:500px)
+@media only screen and (max-width:600px)
 {
 	h1
 	{
@@ -19,8 +19,21 @@
 		padding-top: 8%;
 	}
 
+	#logo
+	{
+		width: 30%;
+		height: 30%;
+	}
 }
 
+@media only screen and (min-width: 600px)
+{
+	#logo
+	{
+		width: auto;
+		height: auto;
+	}
+}
 
 .emotion
 {

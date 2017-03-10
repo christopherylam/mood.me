@@ -25,6 +25,12 @@
 		width: 50%;
 	}
 
+	#logo
+	{
+		width: 30%;
+		height: 30%;
+	}
+
 }
 
 .emotion
@@ -37,12 +43,24 @@
 	padding-left: 12%;
 }
 
+ #menuicon
+{
+    height: 30%;
+    width: 30%;
+}
+    
 @media only screen and (min-width:600px)
 {
 	.activity_image
 	{
 		height: 20%;
 		width: 20%;
+	}
+
+	#logo
+	{
+		width: auto;
+		height: auto;
 	}
 }
 

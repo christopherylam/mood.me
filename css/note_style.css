@@ -4,7 +4,7 @@
 	font-family: "Comic Sans MS";
 }
 
-@media only screen and (max-width:500px)
+@media only screen and (max-width:600px)
 {
 	#menuicon
 	{
@@ -32,9 +32,15 @@
 	{
 		padding-left: 28%;
 	}
+
+	#logo
+	{
+		width: 30%;
+		height: 30%;
+	}
 }
 
-@media only screen and (min-width: 500px) 
+@media only screen and (min-width:600px) 
 {
 	#menuicon
 	{
@@ -64,4 +70,10 @@
         height: 30%;
         width: 30%;
     }
+
+    #logo
+	{
+		width: auto;
+		height: auto;
+	}
 }
