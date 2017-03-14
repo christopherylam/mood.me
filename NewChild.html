@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>mood.me - New Activity</title>
+		<title>mood.me - New Child</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -9,12 +9,8 @@
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!-- animate.css -->
 		<link rel="stylesheet" href="css/animate.css" />
-		<!-- style.css -->
-		<link rel="stylesheet" href="css/newentry_style.css" />
-		<link rel="stylesheet" href="css/newactivity_style.css" />
-		<!-- custom.js -->
-		<script src="js/newactivity_custom.js"></script>
 		<link rel="icon" href="img/logonowords.png" />
+		<link rel="stylesheet" href="css/newchild_style.css" />
 		<link rel="stylesheet" href="css/menuicon.css" />
 	</head>
 	<body>
@@ -34,42 +30,51 @@
 		<div class="container-fluid">
 			<hr>
 		</div>
- 		<br>
- 		<div class="container">
-			<div class="row animated tada">
-				<div id="note_block" class="col-xs-12">
-					<h1 style="float:left;padding-right: 3%;">New Activity -</h1>
-					<img id="plus_image" src="img/add.png" />
-				</div>
-			</div>
-		</div>
-
-		<br><br><br>
-		<div class="container">
-			<div id="upload" class="row animated fadeIn">
-				<div class="col-xs-12">
+		<div id="form" class="container">
+			<div class="row">
+				<div class="col-md-6">
 					<button type="button" id="imgupload" class="btn btn-default">
 						<div id="getImage">
 							<label for="file_select">
-								<img id="imgpr" src="img/addnew.png" />
+								<img id="imgpr" src="img/newchildicon.png" />
 							</label>
 							<input id="file_select" type="file" />
 						</div>
 					</button>
 				</div>
+				<br>
+				<div style="border: solid 1px gray;" class="col-md-6">
+					<form>
+						<div class="form-group">
+							<div class="float">
+						    	<label for="firstname">First Name</label>
+						    	<input type="firstname" class="form-control" id="firstname" placeholder="first name">
+						    </div>
+						    <div>
+							    <label for="lastname">Last Name</label>
+							    <input type="lastname" class="form-control" id="lastname" placeholder="last name" />
+						   </div>
+						 </div>
+						 <div class="form-group">
+						 	<div class="float">
+						    	<label for="age">Age</label>
+						    	<input type="number" class="form-control" id="age" min="1" placeholder="age" />
+						    </div>
+						    <div>
+						    	<label for="gender">Gender</label>
+						    	<select class="form-control" id="gender">
+						    		<option>Male</option>
+						    		<option>Female</option>
+						    	</select>
+						    </div>
+						 </div>
+					</form>
+					<a class="btn btn-primary" href="NewEntry.html" role="button">Create</a>
+					<a style="margin-right: 2%;" class="btn btn-primary" href="NewEntry.html" role="button">Back</a>
+					<br><br>
+				</div>
 			</div>
 		</div>
-		<br><br><br>
-		<div class="container animated fadeIn">
-			<div id="input" class="row">
-				<div class="col-xs-12">
-					<input id="nameinput" type="text" id="name" class="form-control" placeholder="Activity Name..">
-					<a class="btn btn-primary" style="float:left;margin-right:1%;" href="Activity.html" role="button">Save</a>
-					<a class="btn btn-primary" href="Activity.html" role="button">Back</a>
-				</div>	
-			</div>
-		</div>
-		<br>
 	</body>
 	<script>
 		$("input:file").change(function () {

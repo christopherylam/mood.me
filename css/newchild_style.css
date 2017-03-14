@@ -1,0 +1,51 @@
+#getImage > input
+{
+	display: none;
+}
+
+#menuicon
+{
+	height: 30%;
+	width: 30%;
+}
+
+@media only screen and (max-width:600px)
+{
+	#logo
+	{
+		width: 30%;
+		height: 30%;
+	}
+
+	img
+	{
+		width: 50%;
+		height: 50%;
+	}
+
+	#form
+	{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+}
+
+@media only screen and (min-width:600px)
+{
+	#logo
+	{
+		width: auto;
+		height: auto;
+	}
+
+	#lastname, #gender
+	{
+		width: 35%;
+	}
+
+	.float
+	{
+		float: left;
+		margin-right: 2%;
+	}
+}
